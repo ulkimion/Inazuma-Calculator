@@ -1,0 +1,112 @@
+[
+    {
+        "Items": "Comfy Socks",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "1",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "1"
+    },
+    {
+        "Items": "Cooling Supporter",
+        "Kick": "3",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Rice Ball Accessory",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "3"
+    },
+    {
+        "Items": "Dragon Sticker",
+        "Kick": "3",
+        "Control": "1",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Caravan Key Holder",
+        "Kick": "0",
+        "Control": "2",
+        "Technique": "3",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Wonderbot Key Holder",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "5"
+    },
+    {
+        "Items": "Evan's Headband",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "3",
+        "Physical": "4"
+    },
+    {
+        "Items": "Omega Bangle",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "8",
+        "Agility": "0",
+        "Physical": "2"
+    },
+    {
+        "Items": "Jude's Goggles",
+        "Kick": "0",
+        "Control": "4",
+        "Technique": "6",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Evans Talisman",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "2",
+        "Physical": "11"
+    },
+    {
+        "Items": "Professor Layton Accesory",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "15",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    }
+]

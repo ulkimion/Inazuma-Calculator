@@ -1,0 +1,39 @@
+{% extends "base_template.html" %}
+
+{% from 'macros.html' import data_table %}
+
+{% block title %}Calculadora Victory Road{% endblock %}
+
+{% block body %}
+<table class="table">
+    {% for data in players.Players%}
+    <tr>
+        <td>
+            {{ data.Player }}
+        </td>
+        <td>
+            {{ data.Kick }}
+        </td>
+        <td>
+            {{ data.Control }}
+        </td>
+        <td>
+            {{ data.Technique }}
+        </td>
+        <td>
+            {{ data.Intelligence }}
+        </td>
+        <td>
+            {{ data.Pressure }}
+        </td>
+        <td>
+            {{ data.Agility }}
+        </td>
+        <td>
+            {{ data.Physical }}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

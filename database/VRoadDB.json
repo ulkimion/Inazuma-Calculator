@@ -1,0 +1,1188 @@
+{
+    "Players":[
+        {
+            "Player": "Tezcat",
+            "Kick": "176",
+            "Control": "126",
+            "Technique": "136",
+            "Intelligence": "78",
+            "Pressure": "114",
+            "Agility": "98",
+            "Physical": "72"
+        },
+        {
+            "Player": "Kormer",
+            "Kick": "116",
+            "Control": "128",
+            "Technique": "142",
+            "Intelligence": "106",
+            "Pressure": "84",
+            "Agility": "94",
+            "Physical": "90"
+        },
+        {
+            "Player": "Neppten",
+            "Kick": "162",
+            "Control": "116",
+            "Technique": "124",
+            "Intelligence": "94",
+            "Pressure": "78",
+            "Agility": "84",
+            "Physical": "102"
+        },
+        {
+            "Player": "Aphrodite",
+            "Kick": "140",
+            "Control": "126",
+            "Technique": "156",
+            "Intelligence": "100",
+            "Pressure": "110",
+            "Agility": "86",
+            "Physical": "84"
+        },
+        {
+            "Player": "Gazzelle",
+            "Kick": "175",
+            "Control": "121",
+            "Technique": "132",
+            "Intelligence": "68",
+            "Pressure": "120",
+            "Agility": "94",
+            "Physical": "90"
+        },
+        {
+            "Player": "Gocker",
+            "Kick": "80",
+            "Control": "86",
+            "Technique": "70",
+            "Intelligence": "112",
+            "Pressure": "160",
+            "Agility": "84",
+            "Physical": "126"
+        },
+        {
+            "Player": "Bellatrix",
+            "Kick": "136",
+            "Control": "106",
+            "Technique": "158",
+            "Intelligence": "112",
+            "Pressure": "114",
+            "Agility": "88",
+            "Physical": "86"
+        },
+        {
+            "Player": "Aitor",
+            "Kick": "71",
+            "Control": "111",
+            "Technique": "102",
+            "Intelligence": "142",
+            "Pressure": "92",
+            "Agility": "104",
+            "Physical": "98"
+        },
+        {
+            "Player": "Nathan",
+            "Kick": "82",
+            "Control": "98",
+            "Technique": "118",
+            "Intelligence": "114",
+            "Pressure": "150",
+            "Agility": "90",
+            "Physical": "110"
+        },
+        {
+            "Player": "Gabi",
+            "Kick": "76",
+            "Control": "122",
+            "Technique": "76",
+            "Intelligence": "128",
+            "Pressure": "112",
+            "Agility": "94",
+            "Physical": "112"
+        },
+        {
+            "Player": "Darren",
+            "Kick": "72",
+            "Control": "120",
+            "Technique": "90",
+            "Intelligence": "112",
+            "Pressure": "100",
+            "Agility": "148",
+            "Physical": "118"
+        },
+        {
+            "Player": "Mark",
+            "Kick": "92",
+            "Control": "126",
+            "Technique": "72",
+            "Intelligence": "118",
+            "Pressure": "102",
+            "Agility": "168",
+            "Physical": "122"
+        },
+        {
+            "Player": "Jack",
+            "Kick": "69",
+            "Control": "111",
+            "Technique": "68",
+            "Intelligence": "138",
+            "Pressure": "160",
+            "Agility": "122",
+            "Physical": "96"
+        },
+        {
+            "Player": "Goldie",
+            "Kick": "124",
+            "Control": "114",
+            "Technique": "104",
+            "Intelligence": "112",
+            "Pressure": "130",
+            "Agility": "112",
+            "Physical": "106"
+        },
+        {
+            "Player": "Bailong",
+            "Kick": "184",
+            "Control": "128",
+            "Technique": "148",
+            "Intelligence": "108",
+            "Pressure": "74",
+            "Agility": "96",
+            "Physical": "62"
+        },
+        {
+            "Player": "Xavier",
+            "Kick": "145",
+            "Control": "131",
+            "Technique": "108",
+            "Intelligence": "108",
+            "Pressure": "72",
+            "Agility": "106",
+            "Physical": "90"
+        },
+        {
+            "Player": "Fei",
+            "Kick": "153",
+            "Control": "109",
+            "Technique": "112",
+            "Intelligence": "112",
+            "Pressure": "80",
+            "Agility": "94",
+            "Physical": "102"
+        },
+        {
+            "Player": "Zanark",
+            "Kick": "171",
+            "Control": "135",
+            "Technique": "118",
+            "Intelligence": "46",
+            "Pressure": "100",
+            "Agility": "98",
+            "Physical": "136"
+        },
+        {
+            "Player": "Heath",
+            "Kick": "171",
+            "Control": "111",
+            "Technique": "114",
+            "Intelligence": "144",
+            "Pressure": "74",
+            "Agility": "104",
+            "Physical": "84"
+        },
+        {
+            "Player": "Caleb",
+            "Kick": "123",
+            "Control": "123",
+            "Technique": "152",
+            "Intelligence": "92",
+            "Pressure": "124",
+            "Agility": "94",
+            "Physical": "92"
+        },
+        {
+            "Player": "Bomber",
+            "Kick": "72",
+            "Control": "118",
+            "Technique": "148",
+            "Intelligence": "94",
+            "Pressure": "100",
+            "Agility": "94",
+            "Physical": "92"
+        },
+        {
+            "Player": "Scott",
+            "Kick": "76",
+            "Control": "128",
+            "Technique": "108",
+            "Intelligence": "118",
+            "Pressure": "152",
+            "Agility": "78",
+            "Physical": "102"
+        },
+        {
+            "Player": "Shawn",
+            "Kick": "153",
+            "Control": "113",
+            "Technique": "104",
+            "Intelligence": "80",
+            "Pressure": "126",
+            "Agility": "90",
+            "Physical": "84"
+        },
+        {
+            "Player": "Arion",
+            "Kick": "122",
+            "Control": "102",
+            "Technique": "170",
+            "Intelligence": "102",
+            "Pressure": "108",
+            "Agility": "110",
+            "Physical": "88"
+        },
+        {
+            "Player": "Dvalin",
+            "Kick": "126",
+            "Control": "118",
+            "Technique": "104",
+            "Intelligence": "68",
+            "Pressure": "120",
+            "Agility": "158",
+            "Physical": "111"
+        },
+        {
+            "Player": "Zohen",
+            "Kick": "68",
+            "Control": "90",
+            "Technique": "106",
+            "Intelligence": "72",
+            "Pressure": "166",
+            "Agility": "90",
+            "Physical": "128"
+        },
+        {
+            "Player": "Hurley",
+            "Kick": "135",
+            "Control": "71",
+            "Technique": "102",
+            "Intelligence": "96",
+            "Pressure": "144",
+            "Agility": "104",
+            "Physical": "112"
+        },
+        {
+            "Player": "Xene",
+            "Kick": "164",
+            "Control": "138",
+            "Technique": "118",
+            "Intelligence": "104",
+            "Pressure": "76",
+            "Agility": "98",
+            "Physical": "100"
+        },
+        {
+            "Player": "Axel",
+            "Kick": "170",
+            "Control": "116",
+            "Technique": "126",
+            "Intelligence": "90",
+            "Pressure": "82",
+            "Agility": "94",
+            "Physical": "120"
+        },
+        {
+            "Player": "Janus",
+            "Kick": "146",
+            "Control": "126",
+            "Technique": "148",
+            "Intelligence": "88",
+            "Pressure": "84",
+            "Agility": "96",
+            "Physical": "74"
+        },
+        {
+            "Player": "Clear",
+            "Kick": "66",
+            "Control": "112",
+            "Technique": "92",
+            "Intelligence": "120",
+            "Pressure": "152",
+            "Agility": "122",
+            "Physical": "96"
+        },
+        {
+            "Player": "Icer",
+            "Kick": "74",
+            "Control": "100",
+            "Technique": "148",
+            "Intelligence": "90",
+            "Pressure": "100",
+            "Agility": "118",
+            "Physical": "88"
+        },
+        {
+            "Player": "Lean",
+            "Kick": "88",
+            "Control": "114",
+            "Technique": "146",
+            "Intelligence": "110",
+            "Pressure": "112",
+            "Agility": "90",
+            "Physical": "98"
+        },
+        {
+            "Player": "Wittz",
+            "Kick": "176",
+            "Control": "98",
+            "Technique": "114",
+            "Intelligence": "58",
+            "Pressure": "68",
+            "Agility": "98",
+            "Physical": "110"
+        },
+        {
+            "Player": "Zell",
+            "Kick": "148",
+            "Control": "116",
+            "Technique": "124",
+            "Intelligence": "86",
+            "Pressure": "84",
+            "Agility": "96",
+            "Physical": "108"
+        },
+        {
+            "Player": "Kevin",
+            "Kick": "156",
+            "Control": "110",
+            "Technique": "88",
+            "Intelligence": "72",
+            "Pressure": "74",
+            "Agility": "86",
+            "Physical": "134"
+        },
+        {
+            "Player": "Elliot",
+            "Kick": "168",
+            "Control": "86",
+            "Technique": "72",
+            "Intelligence": "82",
+            "Pressure": "134",
+            "Agility": "120",
+            "Physical": "138"
+        },
+        {
+            "Player": "Victor",
+            "Kick": "180",
+            "Control": "130",
+            "Technique": "116",
+            "Intelligence": "94",
+            "Pressure": "76",
+            "Agility": "98",
+            "Physical": "106"
+        },
+        {
+            "Player": "Jude",
+            "Kick": "124",
+            "Control": "128",
+            "Technique": "160",
+            "Intelligence": "100",
+            "Pressure": "80",
+            "Agility": "106",
+            "Physical": "102"
+        },
+        {
+            "Player": "Riccardo",
+            "Kick": "116",
+            "Control": "126",
+            "Technique": "140",
+            "Intelligence": "118",
+            "Pressure": "112",
+            "Agility": "104",
+            "Physical": "88"
+        },
+        {
+            "Player": "Victoria",
+            "Kick": "104",
+            "Control": "120",
+            "Technique": "114",
+            "Intelligence": "94",
+            "Pressure": "116",
+            "Agility": "106",
+            "Physical": "66"
+        },
+        {
+            "Player": "JP",
+            "Kick": "64",
+            "Control": "110",
+            "Technique": "86",
+            "Intelligence": "86",
+            "Pressure": "118",
+            "Agility": "146",
+            "Physical": "108"
+        },
+        {
+            "Player": "Sam",
+            "Kick": "64",
+            "Control": "104",
+            "Technique": "82",
+            "Intelligence": "96",
+            "Pressure": "110",
+            "Agility": "158",
+            "Physical": "108"
+        },
+        {
+            "Player": "Jordan",
+            "Kick": "124",
+            "Control": "114",
+            "Technique": "140",
+            "Intelligence": "110",
+            "Pressure": "98",
+            "Agility": "98",
+            "Physical": "76"
+        },
+        {
+            "Player": "Sonny",
+            "Kick": "140",
+            "Control": "140",
+            "Technique": "132",
+            "Intelligence": "100",
+            "Pressure": "104",
+            "Agility": "110",
+            "Physical": "74"
+        },
+        {
+            "Player": "Erik",
+            "Kick": "128",
+            "Control": "124",
+            "Technique": "144",
+            "Intelligence": "90",
+            "Pressure": "108",
+            "Agility": "84",
+            "Physical": "82"
+        },
+        {
+            "Player": "Suzette",
+            "Kick": "142",
+            "Control": "108",
+            "Technique": "106",
+            "Intelligence": "102",
+            "Pressure": "86",
+            "Agility": "86",
+            "Physical": "88"
+        },
+        {
+            "Player": "Torch",
+            "Kick": "184",
+            "Control": "132",
+            "Technique": "146",
+            "Intelligence": "68",
+            "Pressure": "78",
+            "Agility": "90",
+            "Physical": "102"
+        },
+        {
+            "Player": "Beta",
+            "Kick": "154",
+            "Control": "124",
+            "Technique": "132",
+            "Intelligence": "88",
+            "Pressure": "104",
+            "Agility": "106",
+            "Physical": "98"
+        }
+    ],
+    "Boots":[
+        {
+            "Items": "Plain Boots",
+            "Kick": "1",
+            "Control": "1",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Gale Boots",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "2",
+            "Physical": "1"
+        },
+        {
+            "Items": "Verdant Boots",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "1",
+            "Pressure": "2",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Raimon Boots",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "2",
+            "Physical": "1"
+        },
+        {
+            "Items": "Raimon Boots of Revolution",
+            "Kick": "0",
+            "Control": "1",
+            "Technique": "3",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Backwater Rainon Boots",
+            "Kick": "3",
+            "Control": "1",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Inazuma Another N Boots",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "4",
+            "Pressure": "2",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Inazuma National War God Boots",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "2",
+            "Pressure": "4",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Royal Boots",
+            "Kick": "0",
+            "Control": "5",
+            "Technique": "3",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Polestar Boots",
+            "Kick": "7",
+            "Control": "2",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Zeus Boots",
+            "Kick": "0",
+            "Control": "3",
+            "Technique": "7",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Genesis Boots",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "4",
+            "Agility": "0",
+            "Physical": "8"
+        },
+        {
+            "Items": "Lunar Prime Boots",
+            "Kick": "13",
+            "Control": "2",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Omega Boots",
+            "Kick": "0",
+            "Control": "7",
+            "Technique": "10",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        }
+    ],
+    "Bracelets":[
+        {
+            "Items": "Colorful Bracelet",
+            "Kick": "0",
+            "Control": "1",
+            "Technique": "1",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Leather Gloves",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "1",
+            "Physical": "2"
+        },
+        {
+            "Items": "Wind Bangle",
+            "Kick": "0",
+            "Control": "1",
+            "Technique": "3",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Forrest Bangle",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "1",
+            "Pressure": "3",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Fire Bangle",
+            "Kick": "3",
+            "Control": "1",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Mountain Bangle",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "1",
+            "Physical": "3"
+        },
+        {
+            "Items": "Powerful Gloves",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "4",
+            "Physical": "3"
+        },
+        {
+            "Items": "Meteor Gloves",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "2",
+            "Physical": "6"
+        },
+        {
+            "Items": "Lucky Bracelet",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "6",
+            "Intelligence": "4",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Genesis Bangle",
+            "Kick": "6",
+            "Control": "6",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Grandpa's Gloves",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "15",
+            "Physical": "0"
+        }
+    ],
+    "Pendants":[
+        {
+            "Items": "Medal Pendant",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "1",
+            "Intelligence": "1",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Crash Course Tire Pendant",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "1",
+            "Physical": "2"
+        },
+        {
+            "Items": "Wild Choker",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "3",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Promise Pendant",
+            "Kick": "4",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Pendant of Bonds",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "2",
+            "Intelligence": "2",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Jude's Cape",
+            "Kick": "0",
+            "Control": "2",
+            "Technique": "4",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Adversity Necklace",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "3",
+            "Pressure": "4",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Shiny Mascot",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "4",
+            "Intelligence": "4",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Chrono Stone Necklace",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "3",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "8"
+        },
+        {
+            "Items": "Aliu Crystal",
+            "Kick": "7",
+            "Control": "4",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "King's Scarf",
+            "Kick": "12",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "2",
+            "Physical": "0"
+        }
+    ],
+    "Specials":[
+        {
+            "Items": "Comfy Socks",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "1",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "1"
+        },
+        {
+            "Items": "Cooling Supporter",
+            "Kick": "3",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Rice Ball Accessory",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "3"
+        },
+        {
+            "Items": "Dragon Sticker",
+            "Kick": "3",
+            "Control": "1",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Caravan Key Holder",
+            "Kick": "0",
+            "Control": "2",
+            "Technique": "3",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Wonderbot Key Holder",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "5"
+        },
+        {
+            "Items": "Evan's Headband",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "3",
+            "Physical": "4"
+        },
+        {
+            "Items": "Omega Bangle",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "8",
+            "Agility": "0",
+            "Physical": "2"
+        },
+        {
+            "Items": "Jude's Goggles",
+            "Kick": "0",
+            "Control": "4",
+            "Technique": "6",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        },
+        {
+            "Items": "Evans Talisman",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "0",
+            "Pressure": "0",
+            "Agility": "2",
+            "Physical": "11"
+        },
+        {
+            "Items": "Professor Layton Accesory",
+            "Kick": "0",
+            "Control": "0",
+            "Technique": "0",
+            "Intelligence": "15",
+            "Pressure": "0",
+            "Agility": "0",
+            "Physical": "0"
+        }
+    ],
+    "Shoots":[
+        {
+            "Name": "Fission and Fusion",
+            "Attack": "245",
+            "Element": "Wind"
+        },
+        {
+            "Name": "Omega Assault",
+            "Attack": "255",
+            "Element": "Wind"
+        },
+        {
+            "Name": "Doomsword Slash",
+            "Attack": "220",
+            "Element": "Fire"
+        },
+        {
+            "Name": "Fire Tornado DD",
+            "Attack": "250",
+            "Element": "Fire"
+        },
+        {
+            "Name": "Meteor Blade",
+            "Attack": "245",
+            "Element": "Fire"
+        },
+        {
+            "Name": "Supernova",
+            "Attack": "255",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Fortissimo Foot",
+            "Attack": "220",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Fire tornado",
+            "Attack": "225",
+            "Element": "Fire"
+        },
+        {
+            "Name": "Legendary Wolf",
+            "Attack": "240",
+            "Element": "Wind"
+        },
+        {
+            "Name": "Tsunami Boost",
+            "Attack": "225",
+            "Element": "Wind"
+        },
+        {
+            "Name": "Meteor Blade",
+            "Attack": "245",
+            "Element": "Fire"
+        },
+        {
+            "Name": "Astro Break",
+            "Attack": "225",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Royal Lancer",
+            "Attack": "245",
+            "Element": "Mountain"
+        },
+        {
+            "Name": "Dragon Drive",
+            "Attack": "250",
+            "Element": "Wind"
+        },
+        {
+            "Name": "God Knows",
+            "Attack": "200",
+            "Element": "Wind"
+        },
+        {
+            "Name": "Butterfly Trance",
+            "Attack": "235",
+            "Element": "Mountain"
+        },
+        {
+            "Name": "Northern Impact",
+            "Attack": "245",
+            "Element": "Wind"
+        },
+        {
+            "Name": "Atomic Flare",
+            "Attack": "250",
+            "Element": "Fuego"
+        },
+        {
+            "Name": "Black Ash",
+            "Attack": "200",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Spinning Shot",
+            "Attack": "215",
+            "Element": "Wind"
+        },
+        {
+            "Name": "Ganmade Ray",
+            "Attack": "200",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Bouncing Bunny",
+            "Attack": "200",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Emperor Penguin No.2",
+            "Attack": "245",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Death Zone",
+            "Attack": "235",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Disaster Strike",
+            "Attack": "245",
+            "Element": "Mountain"
+        },
+        {
+            "Name": "Dragon Crash",
+            "Attack": "200",
+            "Element": "Forrest"
+        }
+    ],
+    "Catch":[
+        {
+            "Name": "God Hand (Mountain)",
+            "Attack": "225",
+            "Element": "Mountain"
+        },
+        {
+            "Name": "God Hand V",
+            "Attack": "260",
+            "Element": "Mountain"
+        },
+        {
+            "Name": "God Hand (Forrest)",
+            "Attack": "225",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Mugen The Hand",
+            "Attack": "255",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Wormhole",
+            "Attack": "245",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Rotary Sander",
+            "Attack": "255",
+            "Element": "Fire"
+        },
+        {
+            "Name": "Combustion Catch",
+            "Attack": "220",
+            "Element": "Fire"
+        },
+        {
+            "Name": "Capable Hands",
+            "Attack": "260",
+            "Element": "Fire"
+        }
+    ],
+    "Block":[
+        {
+            "Name": "Hunter's Net",
+            "Attack": "235",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Spinning Cut",
+            "Attack": "235",
+            "Element": "Wind"
+        },
+        {
+            "Name": "Asteroid Belt",
+            "Attack": "260",
+            "Element": "Forrest"
+        },
+        {
+            "Name": "Pancake Defense",
+            "Attack": "235",
+            "Element": "Mountain"
+        },
+        {
+            "Name": "Goopy Gloopy Goo",
+            "Attack": "245",
+            "Element": "Fire"
+        },
+        {
+            "Name": "The Tower",
+            "Attack": "235",
+            "Element": "Wind"
+        },
+        {
+            "Name": "Whirlwind Force",
+            "Attack": "230",
+            "Element": "Wind"
+        },
+        {
+            "Name": "The Wall",
+            "Attack": "220",
+            "Element": "Mountain"
+        }
+    ]
+}

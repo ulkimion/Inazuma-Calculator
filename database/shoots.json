@@ -1,0 +1,132 @@
+[
+    {
+        "Name": "Fission and Fusion",
+        "Attack": "245",
+        "Element": "Wind"
+    },
+    {
+        "Name": "Omega Assault",
+        "Attack": "255",
+        "Element": "Wind"
+    },
+    {
+        "Name": "Doomsword Slash",
+        "Attack": "220",
+        "Element": "Fire"
+    },
+    {
+        "Name": "Fire Tornado DD",
+        "Attack": "250",
+        "Element": "Fire"
+    },
+    {
+        "Name": "Meteor Blade",
+        "Attack": "245",
+        "Element": "Fire"
+    },
+    {
+        "Name": "Supernova",
+        "Attack": "255",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Fortissimo Foot",
+        "Attack": "220",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Fire tornado",
+        "Attack": "225",
+        "Element": "Fire"
+    },
+    {
+        "Name": "Legendary Wolf",
+        "Attack": "240",
+        "Element": "Wind"
+    },
+    {
+        "Name": "Tsunami Boost",
+        "Attack": "225",
+        "Element": "Wind"
+    },
+    {
+        "Name": "Meteor Blade",
+        "Attack": "245",
+        "Element": "Fire"
+    },
+    {
+        "Name": "Astro Break",
+        "Attack": "225",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Royal Lancer",
+        "Attack": "245",
+        "Element": "Mountain"
+    },
+    {
+        "Name": "Dragon Drive",
+        "Attack": "250",
+        "Element": "Wind"
+    },
+    {
+        "Name": "God Knows",
+        "Attack": "200",
+        "Element": "Wind"
+    },
+    {
+        "Name": "Butterfly Trance",
+        "Attack": "235",
+        "Element": "Mountain"
+    },
+    {
+        "Name": "Northern Impact",
+        "Attack": "245",
+        "Element": "Wind"
+    },
+    {
+        "Name": "Atomic Flare",
+        "Attack": "250",
+        "Element": "Fuego"
+    },
+    {
+        "Name": "Black Ash",
+        "Attack": "200",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Spinning Shot",
+        "Attack": "215",
+        "Element": "Wind"
+    },
+    {
+        "Name": "Ganmade Ray",
+        "Attack": "200",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Bouncing Bunny",
+        "Attack": "200",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Emperor Penguin No.2",
+        "Attack": "245",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Death Zone",
+        "Attack": "235",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Disaster Strike",
+        "Attack": "245",
+        "Element": "Mountain"
+    },
+    {
+        "Name": "Dragon Crash",
+        "Attack": "200",
+        "Element": "Forrest"
+    }
+]

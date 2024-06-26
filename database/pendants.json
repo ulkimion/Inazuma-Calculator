@@ -1,0 +1,112 @@
+[
+    {
+        "Items": "Medal Pendant",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "1",
+        "Intelligence": "1",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Crash Course Tire Pendant",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "1",
+        "Physical": "2"
+    },
+    {
+        "Items": "Wild Choker",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "3",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Promise Pendant",
+        "Kick": "4",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Pendant of Bonds",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "2",
+        "Intelligence": "2",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Jude's Cape",
+        "Kick": "0",
+        "Control": "2",
+        "Technique": "4",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Adversity Necklace",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "3",
+        "Pressure": "4",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Shiny Mascot",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "4",
+        "Intelligence": "4",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Chrono Stone Necklace",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "3",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "8"
+    },
+    {
+        "Items": "Aliu Crystal",
+        "Kick": "7",
+        "Control": "4",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "King's Scarf",
+        "Kick": "12",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "2",
+        "Physical": "0"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "Name": "God Hand (Mountain)",
+        "Attack": "225",
+        "Element": "Mountain"
+    },
+    {
+        "Name": "God Hand V",
+        "Attack": "260",
+        "Element": "Mountain"
+    },
+    {
+        "Name": "God Hand (Forrest)",
+        "Attack": "225",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Mugen The Hand",
+        "Attack": "255",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Wormhole",
+        "Attack": "245",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Rotary Sander",
+        "Attack": "255",
+        "Element": "Fire"
+    },
+    {
+        "Name": "Combustion Catch",
+        "Attack": "220",
+        "Element": "Fire"
+    },
+    {
+        "Name": "Capable Hands",
+        "Attack": "260",
+        "Element": "Fire"
+    }
+]

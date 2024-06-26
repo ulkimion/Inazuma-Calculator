@@ -1,0 +1,112 @@
+[
+    {
+        "Items": "Colorful Bracelet",
+        "Kick": "0",
+        "Control": "1",
+        "Technique": "1",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Leather Gloves",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "1",
+        "Physical": "2"
+    },
+    {
+        "Items": "Wind Bangle",
+        "Kick": "0",
+        "Control": "1",
+        "Technique": "3",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Forrest Bangle",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "1",
+        "Pressure": "3",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Fire Bangle",
+        "Kick": "3",
+        "Control": "1",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Mountain Bangle",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "1",
+        "Physical": "3"
+    },
+    {
+        "Items": "Powerful Gloves",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "4",
+        "Physical": "3"
+    },
+    {
+        "Items": "Meteor Gloves",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "2",
+        "Physical": "6"
+    },
+    {
+        "Items": "Lucky Bracelet",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "6",
+        "Intelligence": "4",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Genesis Bangle",
+        "Kick": "6",
+        "Control": "6",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "0",
+        "Physical": "0"
+    },
+    {
+        "Items": "Grandpa's Gloves",
+        "Kick": "0",
+        "Control": "0",
+        "Technique": "0",
+        "Intelligence": "0",
+        "Pressure": "0",
+        "Agility": "15",
+        "Physical": "0"
+    }
+]

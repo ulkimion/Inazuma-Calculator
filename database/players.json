@@ -1,0 +1,492 @@
+[
+    {
+        "Player": "Tezcat",
+        "Kick": "176",
+        "Control": "126",
+        "Technique": "136",
+        "Intelligence": "78",
+        "Pressure": "114",
+        "Agility": "98",
+        "Physical": "72"
+    },
+    {
+        "Player": "Kormer",
+        "Kick": "116",
+        "Control": "128",
+        "Technique": "142",
+        "Intelligence": "106",
+        "Pressure": "84",
+        "Agility": "94",
+        "Physical": "90"
+    },
+    {
+        "Player": "Neppten",
+        "Kick": "162",
+        "Control": "116",
+        "Technique": "124",
+        "Intelligence": "94",
+        "Pressure": "78",
+        "Agility": "84",
+        "Physical": "102"
+    },
+    {
+        "Player": "Aphrodite",
+        "Kick": "140",
+        "Control": "126",
+        "Technique": "156",
+        "Intelligence": "100",
+        "Pressure": "110",
+        "Agility": "86",
+        "Physical": "84"
+    },
+    {
+        "Player": "Gazzelle",
+        "Kick": "175",
+        "Control": "121",
+        "Technique": "132",
+        "Intelligence": "68",
+        "Pressure": "120",
+        "Agility": "94",
+        "Physical": "90"
+    },
+    {
+        "Player": "Gocker",
+        "Kick": "80",
+        "Control": "86",
+        "Technique": "70",
+        "Intelligence": "112",
+        "Pressure": "160",
+        "Agility": "84",
+        "Physical": "126"
+    },
+    {
+        "Player": "Bellatrix",
+        "Kick": "136",
+        "Control": "106",
+        "Technique": "158",
+        "Intelligence": "112",
+        "Pressure": "114",
+        "Agility": "88",
+        "Physical": "86"
+    },
+    {
+        "Player": "Aitor",
+        "Kick": "71",
+        "Control": "111",
+        "Technique": "102",
+        "Intelligence": "142",
+        "Pressure": "92",
+        "Agility": "104",
+        "Physical": "98"
+    },
+    {
+        "Player": "Nathan",
+        "Kick": "82",
+        "Control": "98",
+        "Technique": "118",
+        "Intelligence": "114",
+        "Pressure": "150",
+        "Agility": "90",
+        "Physical": "110"
+    },
+    {
+        "Player": "Gabi",
+        "Kick": "76",
+        "Control": "122",
+        "Technique": "76",
+        "Intelligence": "128",
+        "Pressure": "112",
+        "Agility": "94",
+        "Physical": "112"
+    },
+    {
+        "Player": "Darren",
+        "Kick": "72",
+        "Control": "120",
+        "Technique": "90",
+        "Intelligence": "112",
+        "Pressure": "100",
+        "Agility": "148",
+        "Physical": "118"
+    },
+    {
+        "Player": "Mark",
+        "Kick": "92",
+        "Control": "126",
+        "Technique": "72",
+        "Intelligence": "118",
+        "Pressure": "102",
+        "Agility": "168",
+        "Physical": "122"
+    },
+    {
+        "Player": "Jack",
+        "Kick": "69",
+        "Control": "111",
+        "Technique": "68",
+        "Intelligence": "138",
+        "Pressure": "160",
+        "Agility": "122",
+        "Physical": "96"
+    },
+    {
+        "Player": "Goldie",
+        "Kick": "124",
+        "Control": "114",
+        "Technique": "104",
+        "Intelligence": "112",
+        "Pressure": "130",
+        "Agility": "112",
+        "Physical": "106"
+    },
+    {
+        "Player": "Bailong",
+        "Kick": "184",
+        "Control": "128",
+        "Technique": "148",
+        "Intelligence": "108",
+        "Pressure": "74",
+        "Agility": "96",
+        "Physical": "62"
+    },
+    {
+        "Player": "Xavier",
+        "Kick": "145",
+        "Control": "131",
+        "Technique": "108",
+        "Intelligence": "108",
+        "Pressure": "72",
+        "Agility": "106",
+        "Physical": "90"
+    },
+    {
+        "Player": "Fei",
+        "Kick": "153",
+        "Control": "109",
+        "Technique": "112",
+        "Intelligence": "112",
+        "Pressure": "80",
+        "Agility": "94",
+        "Physical": "102"
+    },
+    {
+        "Player": "Zanark",
+        "Kick": "171",
+        "Control": "135",
+        "Technique": "118",
+        "Intelligence": "46",
+        "Pressure": "100",
+        "Agility": "98",
+        "Physical": "136"
+    },
+    {
+        "Player": "Heath",
+        "Kick": "171",
+        "Control": "111",
+        "Technique": "114",
+        "Intelligence": "144",
+        "Pressure": "74",
+        "Agility": "104",
+        "Physical": "84"
+    },
+    {
+        "Player": "Caleb",
+        "Kick": "123",
+        "Control": "123",
+        "Technique": "152",
+        "Intelligence": "92",
+        "Pressure": "124",
+        "Agility": "94",
+        "Physical": "92"
+    },
+    {
+        "Player": "Bomber",
+        "Kick": "72",
+        "Control": "118",
+        "Technique": "148",
+        "Intelligence": "94",
+        "Pressure": "100",
+        "Agility": "94",
+        "Physical": "92"
+    },
+    {
+        "Player": "Scott",
+        "Kick": "76",
+        "Control": "128",
+        "Technique": "108",
+        "Intelligence": "118",
+        "Pressure": "152",
+        "Agility": "78",
+        "Physical": "102"
+    },
+    {
+        "Player": "Shawn",
+        "Kick": "153",
+        "Control": "113",
+        "Technique": "104",
+        "Intelligence": "80",
+        "Pressure": "126",
+        "Agility": "90",
+        "Physical": "84"
+    },
+    {
+        "Player": "Arion",
+        "Kick": "122",
+        "Control": "102",
+        "Technique": "170",
+        "Intelligence": "102",
+        "Pressure": "108",
+        "Agility": "110",
+        "Physical": "88"
+    },
+    {
+        "Player": "Dvalin",
+        "Kick": "126",
+        "Control": "118",
+        "Technique": "104",
+        "Intelligence": "68",
+        "Pressure": "120",
+        "Agility": "158",
+        "Physical": "111"
+    },
+    {
+        "Player": "Zohen",
+        "Kick": "68",
+        "Control": "90",
+        "Technique": "106",
+        "Intelligence": "72",
+        "Pressure": "166",
+        "Agility": "90",
+        "Physical": "128"
+    },
+    {
+        "Player": "Hurley",
+        "Kick": "135",
+        "Control": "71",
+        "Technique": "102",
+        "Intelligence": "96",
+        "Pressure": "144",
+        "Agility": "104",
+        "Physical": "112"
+    },
+    {
+        "Player": "Xene",
+        "Kick": "164",
+        "Control": "138",
+        "Technique": "118",
+        "Intelligence": "104",
+        "Pressure": "76",
+        "Agility": "98",
+        "Physical": "100"
+    },
+    {
+        "Player": "Axel",
+        "Kick": "170",
+        "Control": "116",
+        "Technique": "126",
+        "Intelligence": "90",
+        "Pressure": "82",
+        "Agility": "94",
+        "Physical": "120"
+    },
+    {
+        "Player": "Janus",
+        "Kick": "146",
+        "Control": "126",
+        "Technique": "148",
+        "Intelligence": "88",
+        "Pressure": "84",
+        "Agility": "96",
+        "Physical": "74"
+    },
+    {
+        "Player": "Clear",
+        "Kick": "66",
+        "Control": "112",
+        "Technique": "92",
+        "Intelligence": "120",
+        "Pressure": "152",
+        "Agility": "122",
+        "Physical": "96"
+    },
+    {
+        "Player": "Icer",
+        "Kick": "74",
+        "Control": "100",
+        "Technique": "148",
+        "Intelligence": "90",
+        "Pressure": "100",
+        "Agility": "118",
+        "Physical": "88"
+    },
+    {
+        "Player": "Lean",
+        "Kick": "88",
+        "Control": "114",
+        "Technique": "146",
+        "Intelligence": "110",
+        "Pressure": "112",
+        "Agility": "90",
+        "Physical": "98"
+    },
+    {
+        "Player": "Wittz",
+        "Kick": "176",
+        "Control": "98",
+        "Technique": "114",
+        "Intelligence": "58",
+        "Pressure": "68",
+        "Agility": "98",
+        "Physical": "110"
+    },
+    {
+        "Player": "Zell",
+        "Kick": "148",
+        "Control": "116",
+        "Technique": "124",
+        "Intelligence": "86",
+        "Pressure": "84",
+        "Agility": "96",
+        "Physical": "108"
+    },
+    {
+        "Player": "Kevin",
+        "Kick": "156",
+        "Control": "110",
+        "Technique": "88",
+        "Intelligence": "72",
+        "Pressure": "74",
+        "Agility": "86",
+        "Physical": "134"
+    },
+    {
+        "Player": "Elliot",
+        "Kick": "168",
+        "Control": "86",
+        "Technique": "72",
+        "Intelligence": "82",
+        "Pressure": "134",
+        "Agility": "120",
+        "Physical": "138"
+    },
+    {
+        "Player": "Victor",
+        "Kick": "180",
+        "Control": "130",
+        "Technique": "116",
+        "Intelligence": "94",
+        "Pressure": "76",
+        "Agility": "98",
+        "Physical": "106"
+    },
+    {
+        "Player": "Jude",
+        "Kick": "124",
+        "Control": "128",
+        "Technique": "160",
+        "Intelligence": "100",
+        "Pressure": "80",
+        "Agility": "106",
+        "Physical": "102"
+    },
+    {
+        "Player": "Riccardo",
+        "Kick": "116",
+        "Control": "126",
+        "Technique": "140",
+        "Intelligence": "118",
+        "Pressure": "112",
+        "Agility": "104",
+        "Physical": "88"
+    },
+    {
+        "Player": "Victoria",
+        "Kick": "104",
+        "Control": "120",
+        "Technique": "114",
+        "Intelligence": "94",
+        "Pressure": "116",
+        "Agility": "106",
+        "Physical": "66"
+    },
+    {
+        "Player": "JP",
+        "Kick": "64",
+        "Control": "110",
+        "Technique": "86",
+        "Intelligence": "86",
+        "Pressure": "118",
+        "Agility": "146",
+        "Physical": "108"
+    },
+    {
+        "Player": "Sam",
+        "Kick": "64",
+        "Control": "104",
+        "Technique": "82",
+        "Intelligence": "96",
+        "Pressure": "110",
+        "Agility": "158",
+        "Physical": "108"
+    },
+    {
+        "Player": "Jordan",
+        "Kick": "124",
+        "Control": "114",
+        "Technique": "140",
+        "Intelligence": "110",
+        "Pressure": "98",
+        "Agility": "98",
+        "Physical": "76"
+    },
+    {
+        "Player": "Sonny",
+        "Kick": "140",
+        "Control": "140",
+        "Technique": "132",
+        "Intelligence": "100",
+        "Pressure": "104",
+        "Agility": "110",
+        "Physical": "74"
+    },
+    {
+        "Player": "Erik",
+        "Kick": "128",
+        "Control": "124",
+        "Technique": "144",
+        "Intelligence": "90",
+        "Pressure": "108",
+        "Agility": "84",
+        "Physical": "82"
+    },
+    {
+        "Player": "Suzette",
+        "Kick": "142",
+        "Control": "108",
+        "Technique": "106",
+        "Intelligence": "102",
+        "Pressure": "86",
+        "Agility": "86",
+        "Physical": "88"
+    },
+    {
+        "Player": "Torch",
+        "Kick": "184",
+        "Control": "132",
+        "Technique": "146",
+        "Intelligence": "68",
+        "Pressure": "78",
+        "Agility": "90",
+        "Physical": "102"
+    },
+    {
+        "Player": "Beta",
+        "Kick": "154",
+        "Control": "124",
+        "Technique": "132",
+        "Intelligence": "88",
+        "Pressure": "104",
+        "Agility": "106",
+        "Physical": "98"
+    }
+]

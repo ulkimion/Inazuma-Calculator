@@ -1,0 +1,42 @@
+[
+    {
+        "Name": "Hunter's Net",
+        "Attack": "235",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Spinning Cut",
+        "Attack": "235",
+        "Element": "Wind"
+    },
+    {
+        "Name": "Asteroid Belt",
+        "Attack": "260",
+        "Element": "Forrest"
+    },
+    {
+        "Name": "Pancake Defense",
+        "Attack": "235",
+        "Element": "Mountain"
+    },
+    {
+        "Name": "Goopy Gloopy Goo",
+        "Attack": "245",
+        "Element": "Fire"
+    },
+    {
+        "Name": "The Tower",
+        "Attack": "235",
+        "Element": "Wind"
+    },
+    {
+        "Name": "Whirlwind Force",
+        "Attack": "230",
+        "Element": "Wind"
+    },
+    {
+        "Name": "The Wall",
+        "Attack": "220",
+        "Element": "Mountain"
+    }
+]
