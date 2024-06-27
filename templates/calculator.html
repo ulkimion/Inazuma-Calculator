@@ -1,22 +1,72 @@
 {% extends "base_template.html" %}
 
-{% block title %}Calculator{% endblock %}
+{% block title %}Victory Road Calculator{% endblock %}
 
 {% block body %}
 
-    <input type="number" placeholder="Kick" id="Kick"/>
-    <input type="number" placeholder="Control" id="Control"/>
-    <input type="number" placeholder="Bond" id="Bond"/>
-    <input type="number" placeholder="+AT" id="ExtraAT"/>
-    <input type="number" placeholder="Shoot Hissatsu" id="ShootHissatsu"/>
-    <input type="checkbox" name="Elemental Advantage" id="ShootAdvantage"/>
+    <input type="text" placeholder="Forward">
+    <input type="number" placeholder="Kick" id="Kick" min="0" min="0"/>
+    <input type="number" placeholder="Control" id="Control" min="0"/>
+    <input type="number" placeholder="Bond" id="Bond" min="0"/>
+    <input type="number" placeholder="+AT" id="ExtraAT" min="0"/>
+    <input type="number" placeholder="Shoot Hissatsu" id="ShootHissatsu" min="0"/>
+    <input type="checkbox" name="Elemental Advantage" id="ShootAdvantage" min="0"/>
+    <input type="number" placeholder="Direct" id="Direct" min="0"/>
     <br>
-    <input type="number" placeholder="Agility" id="Agility"/>
-    <input type="number" placeholder="Physical" id="Physical"/>
-    <input type="number" placeholder="Catch Hissatsu" id="CatchHissatsu"/>
-    <input type="number" placeholder="+DF" id="ExtraDF"/>
-    <input type="checkbox" name="Elemental Advantage" id="CatchAdvantage"/>
-    <input type="number" placeholder="+DF" id="ExtraDF"/>
-    <input type="number" placeholder="KP Increase" id="KPincrease"/>
+    <input type="number" placeholder="Boots" id="BootsKicker" min="0"/>
+    <input type="number" placeholder="Bracelet" id="BraceletKicker" min="0"/>
+    <input type="number" placeholder="Pendant" id="PendantKicker" min="0"/>
+    <input type="number" placeholder="Special" id="SpecialKicker" min="0"/>
+    <br><br>
+    <input type="text" placeholder="Goalkeeper">
+    <input type="number" placeholder="Agility" id="Agility" min="0"/>
+    <input type="number" placeholder="Physical" id="Physical" min="0"/>
+    <input type="number" placeholder="Catch Hissatsu" id="CatchHissatsu" min="0"/>
+    <input type="number" placeholder="+DF" id="ExtraDF" min="0"/>
+    <input type="checkbox" name="Elemental Advantage" id="CatchAdvantage" min="0"/>
+    <input type="number" placeholder="KP Increase" id="KPincrease" min="0"/>
+    <input type="number" placeholder="Lost KP" id="LostKP" min="0"/>
+    <br>
+    <input type="number" placeholder="Castle Wall 1" id="CW1" min="0"/>
+    <input type="number" placeholder="Castle Wall 2" id="CW2" min="0"/>
+    <br>
+    <input type="number" placeholder="Boots" id="BootsCatcher" min="0"/>
+    <input type="number" placeholder="Bracelet" id="BraceletCatcher" min="0"/>
+    <input type="number" placeholder="Pendant" id="PendantCatcher" min="0"/>
+    <input type="number" placeholder="Special" id="SpecialCatcher" min="0"/>
 
+    
+    
+    
+    <script> 
+        var Kick = document.getElementById("Kick");
+        var Control = document.getElementById("Control");
+        var Bond = document.getElementById("Bond");
+        var ExtraAT = document.getElementById("ExtraAT");
+        var ShootHissatsu = document.getElementById("ShootHissatsu");
+        var Direct = document.getElementById("Direct");
+        var BootsKicker = document.getElementById("BootsKicker");
+        var BraceletKicker = document.getElementById("BraceletKicker");
+        var PendantKicker = document.getElementById("PendantKicker");
+        var SpecialKicker = document.getElementById("SpecialKicker");
+        var Agility = document.getElementById("Agility");
+        var Physical = document.getElementById("Physical");
+        var CatchHissatsu = document.getElementById("CatchHissatsu");
+        var ExtraDF = document.getElementById("ExtraDF");
+        var KPincrease = document.getElementById("KPincrease");
+        var LostKP = document.getElementById("LostKP");
+        var CW1 = document.getElementById("CW1");
+        var CW2 = document.getElementById("CW2");
+        var BootsCatcher = document.getElementById("BootsCatcher");
+        var BraceletCatcher = document.getElementById("BraceletCatcher");
+        var PendantCatcher = document.getElementById("PendantCatcher");
+        var SpecialCatcher = document.getElementById("SpecialCatcher");
+
+        var ShootPower;
+        var CatchPower;
+
+        // formula tiro = (((Kick + Shoot + equipamiento) + Shoot Hissatsu + Direct )x (1 + Extra AT)) x Bond)
+        //  formula bloqueo = (Agility + physical + equipamiento) + (Catch Hissatsu x Extra DF) + Castle wall 1 y 2 - LostKP + ((Agility + physical + equipamiento) x (1 + KP Increase)) 
+
+    </script>
 {% endblock %}
