@@ -19,3 +19,9 @@ def player_data(slug):
     with open("database/VRoadDB.json", encoding="utf-8") as file:
         data=json.load(file)
     return render_template("player_data.html", player=data, slug_title=slug)
+
+@app.route("/calculator/")
+def calculator():
+    with open("database/VRoadDB.json", encoding="utf-8") as file:
+        data=json.load(file)
+    return render_template("calculator.html", players=data)
