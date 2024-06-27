@@ -1,0 +1,17 @@
+{% extends "base_template.html" %}
+
+{% block title %}{{ slug_title }}{% endblock %}
+
+{% block body %}
+
+            <img src="{{ url_for('static',filename='{}'.format(data.Image) ) }}">
+            {{ data.Player }}
+            {{ data.Kick }}
+            {{ data.Control }}
+            {{ data.Technique }}
+            {{ data.Intelligence }}
+            {{ data.Pressure }}
+            {{ data.Agility }}
+            {{ data.Physical }}
+            
+{% endblock %}

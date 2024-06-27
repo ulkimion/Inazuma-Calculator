@@ -1,7 +1,5 @@
 {% extends "base_template.html" %}
 
-{% from 'macros.html' import data_table %}
-
 {% block title %}Calculadora Victory Road{% endblock %}
 
 {% block body %}
@@ -9,11 +7,11 @@
     {% for data in players.Players%}
     <tr>
         <td>
-            <!--<img src="{{url_for('static', filename='Axel.webp')}}">-->
-            <img src="{{ url_for('static',filename='{}'.format(data.Image) ) }}">
+            {{ data.Player }}
+            
         </td>
         <td>
-            {{ data.Player }}
+            <img src="{{ url_for('static',filename='{}'.format(data.Image) ) }}">
         </td>
         <td>
             {{ data.Kick }}
