@@ -9,6 +9,10 @@
     {% for data in players.Players%}
     <tr>
         <td>
+            <!--<img src="{{url_for('static', filename='Axel.webp')}}">-->
+            <img src="{{ url_for('static',filename='{}'.format(data.Image) ) }}">
+        </td>
+        <td>
             {{ data.Player }}
         </td>
         <td>
