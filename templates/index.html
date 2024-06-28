@@ -7,7 +7,7 @@
     <input type="text" placeholder="Forward">
     <input type="number" placeholder="Kick" id="Kick" min="0" min="0"/>
     <input type="number" placeholder="Control" id="Control" min="0"/>
-    <input type="number" placeholder="Bond" id="Bond" min="0"/>
+    <input type="number" placeholder="Bond" id="Bond" min="0" max="30"/>
     <input type="number" placeholder="+AT" id="ExtraAT" min="0"/>
     <input type="number" placeholder="Shoot Hissatsu" id="ShootHissatsu" min="0"/>
     <input type="checkbox" name="Elemental Advantage" id="ShootAdvantage" min="0"/>
@@ -35,9 +35,24 @@
     <input type="number" placeholder="Pendant" id="PendantCatcher" min="0"/>
     <input type="number" placeholder="Special" id="SpecialCatcher" min="0"/>
 
+    
     <p id="ShootResult"></p>
     <p id="CatchResult"></p>
 
+    <select id="Kicker" onchange="updateFW()">
+        {% for data in players.Players%}
+            <option>{{ data.Player }}</option>
+        {% endfor %}
+    </select>
+
+    <select id="Catcher" onchange="updateGK()">
+        {% for data in players.Players%}
+            <option>{{ data.Player }}</option>
+        {% endfor %}
+    </select>
+
+    <img src="{{ url_for('static',filename='Fei.webp' ) }}" class="responsive"id="FW">
+    <img src="{{ url_for('static',filename='Darren.webp' ) }}" class="responsive"id="GK">
     
     
     
@@ -79,6 +94,13 @@
         //formula atrape base = (Agility + physical + equipamiento)
         //formula tiro final = (( Tiro base + Shoot Hissatsu + Direct ) x (1 + Extra AT)) x Bond)
         //formula atrape final = atrape base + (Catch Hissatsu x Extra DF) + Castle wall 1 y 2 + (atrape base x (1 + KP Increase))  - LostKP 
+
+        function updateFW(){
+            document.getElementById("FW");
+            FW.src="{{ url_for('static',filename='Darren.webp' ) }}";
+        }
+
+        function updateGK(){}
 
     </script>
 {% endblock %}
