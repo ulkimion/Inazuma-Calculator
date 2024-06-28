@@ -35,6 +35,9 @@
     <input type="number" placeholder="Pendant" id="PendantCatcher" min="0"/>
     <input type="number" placeholder="Special" id="SpecialCatcher" min="0"/>
 
+    <p id="ShootResult"></p>
+    <p id="CatchResult"></p>
+
     
     
     
@@ -62,11 +65,20 @@
         var PendantCatcher = document.getElementById("PendantCatcher");
         var SpecialCatcher = document.getElementById("SpecialCatcher");
 
-        var ShootPower;
-        var CatchPower;
+        var ShootPower = Kick + Control + BootsKicker + BraceletKicker + PendantKicker + SpecialKicker;
+        var FinalShootPower = ((ShootPower + ShootHissatsu + Direct) * (1 + (ExtraAT / 100)) * (1 + (Bond / 100)));
+        var CatchPower = Agility + Physical + BootsKicker + BraceletCatcher + PendantCatcher + SpecialCatcher;
+        var FinalCatchPower = CatchPower + (CatchHissatsu * ExtraDF) + CW1 + CW2 + (CatchPower * (1 + (KPincrease /100))) - LostKP;
 
-        // formula tiro = (((Kick + Shoot + equipamiento) + Shoot Hissatsu + Direct )x (1 + Extra AT)) x Bond)
-        //  formula bloqueo = (Agility + physical + equipamiento) + (Catch Hissatsu x Extra DF) + Castle wall 1 y 2 - LostKP + ((Agility + physical + equipamiento) x (1 + KP Increase)) 
+        document.getElementById("ShootResult").innerHTML =
+        "Shoot result: " + FinalShootPower;
+
+        document.getElementById("CatchResult").innerHTML =
+        "Catch Result: " + FinalShootPower;
+        //formula tiro base = (Kick + Control + equipamiento)
+        //formula atrape base = (Agility + physical + equipamiento)
+        //formula tiro final = (( Tiro base + Shoot Hissatsu + Direct ) x (1 + Extra AT)) x Bond)
+        //formula atrape final = atrape base + (Catch Hissatsu x Extra DF) + Castle wall 1 y 2 + (atrape base x (1 + KP Increase))  - LostKP 
 
     </script>
 {% endblock %}

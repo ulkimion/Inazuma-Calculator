@@ -20,8 +20,8 @@ def player_data(slug):
         data=json.load(file)
     return render_template("player_data.html", player=data, slug_title=slug)
 
-@app.route("/calculator/")
+@app.route("/")
 def calculator():
     with open("database/VRoadDB.json", encoding="utf-8") as file:
         data=json.load(file)
-    return render_template("calculator.html", players=data)
+    return render_template("index.html", players=data)
