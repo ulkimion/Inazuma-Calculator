@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 @app.route("/show_characters/")
-def index():
+def show_characters():
     with open("database/VRoadDB.json", encoding="utf-8") as file:
         data=json.load(file)
     return render_template("show_characters.html", players=data)
@@ -18,10 +18,10 @@ def show_post(slug):
 def player_data(slug):
     with open("database/VRoadDB.json", encoding="utf-8") as file:
         data=json.load(file)
-    return render_template("player_data.html", player=data, slug_title=slug)
+    return render_template("player_data.html", player=data, slug_title=slug, content=slug)
 
 @app.route("/")
-def calculator():
+def index():
     with open("database/VRoadDB.json", encoding="utf-8") as file:
         data=json.load(file)
     return render_template("index.html", players=data)

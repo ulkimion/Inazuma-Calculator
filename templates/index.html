@@ -4,66 +4,88 @@
 
 {% block body %}
 
-    <input type="text" placeholder="Forward">
-    <input type="number" placeholder="Kick" id="Kick" min="0" min="0"/>
-    <input type="number" placeholder="Control" id="Control" min="0"/>
-    <input type="number" placeholder="Bond" id="Bond" min="0" max="30"/>
-    <input type="number" placeholder="+AT" id="ExtraAT" min="0"/>
-    <input type="number" placeholder="Shoot Hissatsu" id="ShootHissatsu" min="0"/>
-    <input type="checkbox" name="Elemental Advantage" id="ShootAdvantage" min="0"/>
-    <input type="number" placeholder="Direct" id="Direct" min="0"/>
+    <div class="Calculator">
+    <div class="Calculator_FW">
+    <img src="{{ url_for('static',filename='Shawn.webp' ) }}" class="responsive"id="FW">
     <br>
-
-    <select id="BootsKickerSelector" onchange="updateFW()">
-        {% for data in players.Boots %}
-            <option>{{ data.Boots }}</option>
-        {% endfor %}
-    </select>
-
-    <input type="number" placeholder="Boots" id="BootsKicker" min="0"/>
-    <input type="number" placeholder="Bracelet" id="BraceletKicker" min="0"/>
-    <input type="number" placeholder="Pendant" id="PendantKicker" min="0"/>
-    <input type="number" placeholder="Special" id="SpecialKicker" min="0"/>
-    <br><br>
-    <input type="text" placeholder="Goalkeeper">
-    <input type="number" placeholder="Agility" id="Agility" min="0"/>
-    <input type="number" placeholder="Physical" id="Physical" min="0"/>
-    <input type="number" placeholder="Catch Hissatsu" id="CatchHissatsu" min="0"/>
-    <input type="number" placeholder="+DF" id="ExtraDF" min="0"/>
-    <input type="checkbox" name="Elemental Advantage" id="CatchAdvantage" min="0"/>
-    <input type="number" placeholder="KP Increase" id="KPincrease" min="0"/>
-    <input type="number" placeholder="Lost KP" id="LostKP" min="0"/>
-    <br>
-    <input type="number" placeholder="Castle Wall 1" id="CW1" min="0"/>
-    <input type="number" placeholder="Castle Wall 2" id="CW2" min="0"/>
-    <br>
-    <input type="number" placeholder="Boots" id="BootsCatcher" min="0"/>
-    <input type="number" placeholder="Bracelet" id="BraceletCatcher" min="0"/>
-    <input type="number" placeholder="Pendant" id="PendantCatcher" min="0"/>
-    <input type="number" placeholder="Special" id="SpecialCatcher" min="0"/>
-
-    
-    <p id="ShootResult"></p>
-    <p id="CatchResult"></p>
-
     <select id="Kicker" onchange="updateFW()">
         {% for data in players.Players%}
             <option>{{ data.Player }}</option>
         {% endfor %}
     </select>
+    <br>
+    <input type="number" placeholder="Kick" id="Kick" min="0" min="0"/><br>
+    <input type="number" placeholder="Control" id="Control" min="0"/><br>
+    Technique<br>
+    <input type="number" placeholder="Shoot Hissatsu" id="ShootHissatsu" min="0"/><br>
+    +AT<br>
+    <input type="number" placeholder="+AT" id="ExtraAT" min="0"/><br><br>
+    Equipment<br>
+
+<!--   <select id="BootsKickerSelector" onchange="updateFW()">
+        {% for data in players.Boots %}
+            <option>{{ data.Boots }}</option>
+        {% endfor %}
+    </select> --> 
+
+    <input type="number" placeholder="Boots" id="BootsKicker" min="0"/><br>
+    <input type="number" placeholder="Bracelet" id="BraceletKicker" min="0"/><br>
+    <input type="number" placeholder="Pendant" id="PendantKicker" min="0"/><br>
+    <input type="number" placeholder="Special" id="SpecialKicker" min="0"/>
+
+</div>
+
+<div class="Calculator_Results_Wrapper">
+<div class="Calculator_Results">
+ <b>
+    <p id="ShootResult"></p>
+    <p id="CatchResult"></p>
+    <p id="Remaining_KP"></p>
+</b>
+</div>
+<br>
+<div class="Calculator_Details">    
+    Direct <br> 
+    <input type="number" placeholder="Direct" id="Direct" min="0"/><br>    
+    Bond <br> 
+    <input type="number" placeholder="Bond" id="Bond" min="0" max="30"/><br>
+    KP Increase<br> 
+    <input type="number" placeholder="KP Increase" id="KPincrease" min="0"/><br>
+    LostKP<br> 
+    <input type="number" placeholder="Lost KP" id="LostKP" min="0"/><br>
+    Castle Wall 1<br> 
+    <input type="number" placeholder="Castle Wall 1" id="CW1" min="0"/><br>
+    Castle Wall 2<br> 
+    <input type="number" placeholder="Castle Wall 2" id="CW2" min="0"/><br>
+</div>
+</div>
 
 
-
-
+<div class="Calculator_GK">
+    <img src="{{ url_for('static',filename='Mark.webp' ) }}" class="responsive"id="GK">
+    <br>
     <select id="Catcher" onchange="updateGK()">
         {% for data in players.Players%}
             <option>{{ data.Player }}</option>
         {% endfor %}
     </select>
+    <br>
 
-    <img src="{{ url_for('static',filename='Tezcat.webp' ) }}" class="responsive"id="FW">
-    <img src="{{ url_for('static',filename='Tezcat.webp' ) }}" class="responsive"id="GK">
+
+    <input type="number" placeholder="Agility" id="Agility" min="0"/><br>
+    <input type="number" placeholder="Physical" id="Physical" min="0"/><br>
+    Technique<br>
+    <input type="number" placeholder="Catch Hissatsu" id="CatchHissatsu" min="0"/><br>
+    +DF<br>
+    <input type="number" placeholder="+DF" id="ExtraDF" min="0"/><br><br>
     
+    Equipment<br>
+    <input type="number" placeholder="Boots" id="BootsCatcher" min="0"/><br>
+    <input type="number" placeholder="Bracelet" id="BraceletCatcher" min="0"/><br>
+    <input type="number" placeholder="Pendant" id="PendantCatcher" min="0"/><br>
+    <input type="number" placeholder="Special" id="SpecialCatcher" min="0"/><br>
+</div>
+</div>
     
     
     <script> 
@@ -95,9 +117,12 @@
         var FinalShootPower = ((ShootPower + ShootHissatsu + Direct) * (1 + (ExtraAT / 100)) * (1 + (Bond / 100)));
         var CatchPower = (Agility * 6) + (Physical * 3) + BootsCatcher + BraceletCatcher + PendantCatcher + SpecialCatcher;
         var FinalCatchPower = CatchPower + (CatchHissatsu * ExtraDF) + CW1 + CW2 + (CatchPower * (0 + (KPincrease / 100))) - LostKP;
+        var GK_Remaining_KP = FinalCatchPower - FinalShootPower;
+
 
         document.getElementById("ShootResult").innerHTML = "Shoot result: " + FinalShootPower;
         document.getElementById("CatchResult").innerHTML = "Catch Result: " + FinalCatchPower;
+        document.getElementById("Remaining_KP").innerHTML = "Remaining KP: " + GK_Remaining_KP;
     }
 
     document.querySelectorAll('input').forEach(input => {

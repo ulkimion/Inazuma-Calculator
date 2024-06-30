@@ -4,14 +4,51 @@
 
 {% block body %}
 
-            <img src="{{ url_for('static',filename='{}'.format(data.Image) ) }}">
+{{content}}
+
+<table class="table">
+    {% for data in player.Players %}
+    <tr>
+        <td>
             {{ data.Player }}
-            {{ data.Kick }}
-            {{ data.Control }}
-            {{ data.Technique }}
-            {{ data.Intelligence }}
-            {{ data.Pressure }}
-            {{ data.Agility }}
-            {{ data.Physical }}
             
+        </td>
+        <td>
+            <img src="{{ url_for('static',filename='{}'.format(data.Image) ) }}">
+            
+        </td>
+        <td>
+            {{ data.Kick }}
+        </td>
+        <td>
+            {{ data.Control }}
+        </td>
+        <td>
+            {{ data.Technique }}
+        </td>
+        <td>
+            {{ data.Intelligence }}
+        </td>
+        <td>
+            {{ data.Pressure }}
+        </td>
+        <td>
+            {{ data.Agility }}
+        </td>
+        <td>
+            {{ data.Physical }}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
 {% endblock %}
+
+<script>
+    function updatePlayer_Photo() {
+        var selectedPlayer = content;
+        var imageElement = document.getElementById("player");
+        imageElement.src = "{{ url_for('static', filename='') }}" + selectedPlayer + ".webp";
+        }
+
+    updatePlayer+Photo();
