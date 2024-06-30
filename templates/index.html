@@ -13,6 +13,13 @@
     <input type="checkbox" name="Elemental Advantage" id="ShootAdvantage" min="0"/>
     <input type="number" placeholder="Direct" id="Direct" min="0"/>
     <br>
+
+    <select id="BootsKickerSelector" onchange="updateFW()">
+        {% for data in players.Boots %}
+            <option>{{ data.Boots }}</option>
+        {% endfor %}
+    </select>
+
     <input type="number" placeholder="Boots" id="BootsKicker" min="0"/>
     <input type="number" placeholder="Bracelet" id="BraceletKicker" min="0"/>
     <input type="number" placeholder="Pendant" id="PendantKicker" min="0"/>
@@ -45,46 +52,60 @@
         {% endfor %}
     </select>
 
+
+
+
     <select id="Catcher" onchange="updateGK()">
         {% for data in players.Players%}
             <option>{{ data.Player }}</option>
         {% endfor %}
     </select>
 
-    <img src="{{ url_for('static',filename='Fei.webp' ) }}" class="responsive"id="FW">
-    <img src="{{ url_for('static',filename='Darren.webp' ) }}" class="responsive"id="GK">
+    <img src="{{ url_for('static',filename='Tezcat.webp' ) }}" class="responsive"id="FW">
+    <img src="{{ url_for('static',filename='Tezcat.webp' ) }}" class="responsive"id="GK">
     
     
     
     <script> 
-        var Kick = document.getElementById("Kick");
-        var Control = document.getElementById("Control");
-        var Bond = document.getElementById("Bond");
-        var ExtraAT = document.getElementById("ExtraAT");
-        var ShootHissatsu = document.getElementById("ShootHissatsu");
-        var Direct = document.getElementById("Direct");
-        var BootsKicker = document.getElementById("BootsKicker");
-        var BraceletKicker = document.getElementById("BraceletKicker");
-        var PendantKicker = document.getElementById("PendantKicker");
-        var SpecialKicker = document.getElementById("SpecialKicker");
-        var Agility = document.getElementById("Agility");
-        var Physical = document.getElementById("Physical");
-        var CatchHissatsu = document.getElementById("CatchHissatsu");
-        var ExtraDF = document.getElementById("ExtraDF");
-        var KPincrease = document.getElementById("KPincrease");
-        var LostKP = document.getElementById("LostKP");
-        var CW1 = document.getElementById("CW1");
-        var CW2 = document.getElementById("CW2");
-        var BootsCatcher = document.getElementById("BootsCatcher");
-        var BraceletCatcher = document.getElementById("BraceletCatcher");
-        var PendantCatcher = document.getElementById("PendantCatcher");
-        var SpecialCatcher = document.getElementById("SpecialCatcher");
+ function calcular() {
+        var Kick = parseFloat(document.getElementById("Kick").value) || 0;
+        var Control = parseFloat(document.getElementById("Control").value) || 0;
+        var Bond = parseFloat(document.getElementById("Bond").value) || 0;
+        var ExtraAT = parseFloat(document.getElementById("ExtraAT").value) || 0;
+        var ShootHissatsu = parseFloat(document.getElementById("ShootHissatsu").value) || 0;
+        var Direct = parseFloat(document.getElementById("Direct").value) || 0;
+        var BootsKicker = parseFloat(document.getElementById("BootsKicker").value) || 0;
+        var BraceletKicker = parseFloat(document.getElementById("BraceletKicker").value) || 0;
+        var PendantKicker = parseFloat(document.getElementById("PendantKicker").value) || 0;
+        var SpecialKicker = parseFloat(document.getElementById("SpecialKicker").value) || 0;
+        var Agility = parseFloat(document.getElementById("Agility").value) || 0;
+        var Physical = parseFloat(document.getElementById("Physical").value) || 0;
+        var CatchHissatsu = parseFloat(document.getElementById("CatchHissatsu").value) || 0;
+        var ExtraDF = parseFloat(document.getElementById("ExtraDF").value) || 0;
+        var KPincrease = parseFloat(document.getElementById("KPincrease").value) || 0;
+        var LostKP = parseFloat(document.getElementById("LostKP").value) || 0;
+        var CW1 = parseFloat(document.getElementById("CW1").value) || 0;
+        var CW2 = parseFloat(document.getElementById("CW2").value) || 0;
+        var BootsCatcher = parseFloat(document.getElementById("BootsCatcher").value) || 0;
+        var BraceletCatcher = parseFloat(document.getElementById("BraceletCatcher").value) || 0;
+        var PendantCatcher = parseFloat(document.getElementById("PendantCatcher").value) || 0;
+        var SpecialCatcher = parseFloat(document.getElementById("SpecialCatcher").value) || 0;
 
         var ShootPower = Kick + Control + BootsKicker + BraceletKicker + PendantKicker + SpecialKicker;
         var FinalShootPower = ((ShootPower + ShootHissatsu + Direct) * (1 + (ExtraAT / 100)) * (1 + (Bond / 100)));
-        var CatchPower = Agility + Physical + BootsKicker + BraceletCatcher + PendantCatcher + SpecialCatcher;
-        var FinalCatchPower = CatchPower + (CatchHissatsu * ExtraDF) + CW1 + CW2 + (CatchPower * (1 + (KPincrease /100))) - LostKP;
+        var CatchPower = (Agility * 6) + (Physical * 3) + BootsCatcher + BraceletCatcher + PendantCatcher + SpecialCatcher;
+        var FinalCatchPower = CatchPower + (CatchHissatsu * ExtraDF) + CW1 + CW2 + (CatchPower * (0 + (KPincrease / 100))) - LostKP;
 
+        document.getElementById("ShootResult").innerHTML = "Shoot result: " + FinalShootPower;
+        document.getElementById("CatchResult").innerHTML = "Catch Result: " + FinalCatchPower;
+    }
+
+    document.querySelectorAll('input').forEach(input => {
+        input.addEventListener('input', calcular);
+    });
+
+    calcular();
+     
         document.getElementById("ShootResult").innerHTML =
         "Shoot result: " + FinalShootPower;
 
@@ -95,12 +116,23 @@
         //formula tiro final = (( Tiro base + Shoot Hissatsu + Direct ) x (1 + Extra AT)) x Bond)
         //formula atrape final = atrape base + (Catch Hissatsu x Extra DF) + Castle wall 1 y 2 + (atrape base x (1 + KP Increase))  - LostKP 
 
-        function updateFW(){
-            document.getElementById("FW");
-            FW.src="{{ url_for('static',filename='Darren.webp' ) }}";
+        function updateFW() {
+        var selectedPlayer = document.getElementById("Kicker").value;
+        var imageElement = document.getElementById("FW");
+        imageElement.src = "{{ url_for('static', filename='') }}" + selectedPlayer + ".webp";
         }
 
-        function updateGK(){}
+        function updateGK() {
+        var selectedPlayer = document.getElementById("Catcher").value;
+        var imageElement = document.getElementById("GK");
+        imageElement.src = "{{ url_for('static', filename='') }}" + selectedPlayer + ".webp";
+        }
+
+        function updateBootsKicker(){
+            ;
+        }
+
+        
 
     </script>
 {% endblock %}
