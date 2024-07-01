@@ -4,158 +4,75 @@
 
 {% block body %}
 <div class="container">
-<table class="table">
-    <div class="table-header">
-        <tr>
-            <td>
-        <div class="header__item"><a id="name" class="filter__link" href="#">Name</a></div>
-            </td>
-            <td>
-        <div class="header__item"><a id="image" class="filter__link filter__link--number" href="#">Image</a></div>
-    </td>
-    
-    <td>
-        <div class="header__item"><a id="kick" class="filter__link filter__link--number" href="#">Kick</a></div>
-    </td>
-    <td>
-        <div class="header__item"><a id="control" class="filter__link filter__link--number" href="#">Control</a></div>
-    </td>
-    <td>
-        <div class="header__item"><a id="technique" class="filter__link filter__link--number" href="#">Technique</a></div>
-    </td>
-    <td>
-        <div class="header__item"><a id="intelligence" class="filter__link filter__link--number" href="#">Intelligence</a></div>
-    </td>
-    <td>
-        <div class="header__item"><a id="pressure" class="filter__link filter__link--number" href="#">Pressure</a></div>
-    </td>
-    <td>
-        <div class="header__item"><a id="agility" class="filter__link filter__link--number" href="#">Agility</a></div>
-    </td>
-    <td>
-        <div class="header__item"><a id="physical" class="filter__link filter__link--number" href="#">Physical</a></div>
-        </tr>
-    </div>
+    <table class="table">
+        <div class="table-header">
+            <tr>
+                <td>
+                    <div class="header__item">Name</div>
+                </td>
+                <td>
+                    <div class="header__item">Image</div>
+                </td>
+                <td>
+                    <div class="header__item">Kick</div>
+                </td>
+                <td>
+                    <div class="header__item">Control</div>
+                </td>
+                <td>
+                    <div class="header__item">Technique</div>
+                </td>
+                <td>
+                    <div class="header__item">Intelligence</div>
+                </td>
+                <td>
+                    <div class="header__item">Pressure</div>
+                </td>
+                <td>
+                    <div class="header__item">Agility</div>
+                </td>
+                <td>
+                    <div class="header__item">Physical</div>
+                </td>
+            </tr>
+        </div>
 
-
-    <div class="table-content">
-    {% for data in players.Players%}
-    <div class="table-row">	
-    <tr>
-        <td>
-            <div class="table-data">{{ data.Player }}</div>
-            
-        </td>
-        <td>
-            <img src="{{ url_for('static',filename='{}'.format(data.Image) ) }}">
-        </td>
-        <td>
-            <div class="table-data">{{ data.Kick }}</div>
-        </td>
-        <td>
-            <div class="table-data">{{ data.Control }}</div>
-        </td>
-        <td>
-            <div class="table-data">{{ data.Technique }}</div>
-        </td>
-        <td>
-            <div class="table-data">{{ data.Intelligence }}</div>
-        </td>
-        <td>
-            <div class="table-data">{{ data.Pressure }}</div>
-        </td>
-        <td>
-            <div class="table-data">{{ data.Agility }}</div>
-        </td>
-        <td>
-            <div class="table-data">{{ data.Physical }}</div>
-        </td>
-    </tr>
-    </div>
-    {% endfor %}
-</div>
-</table>
+        <div class="table-content">
+            {% for data in players.Players %}
+            <div class="table-row">
+                <tr>
+                    <td>
+                        <div class="table-data">{{ data.Player }}</div>
+                    </td>
+                    <td>
+                        <img src="{{ url_for('static', filename='{}'.format(data.Image) ) }}">
+                    </td>
+                    <td>
+                        <div class="table-data">{{ data.Kick }}</div>
+                    </td>
+                    <td>
+                        <div class="table-data">{{ data.Control }}</div>
+                    </td>
+                    <td>
+                        <div class="table-data">{{ data.Technique }}</div>
+                    </td>
+                    <td>
+                        <div class="table-data">{{ data.Intelligence }}</div>
+                    </td>
+                    <td>
+                        <div class="table-data">{{ data.Pressure }}</div>
+                    </td>
+                    <td>
+                        <div class="table-data">{{ data.Agility }}</div>
+                    </td>
+                    <td>
+                        <div class="table-data">{{ data.Physical }}</div>
+                    </td>
+                </tr>
+            </div>
+            {% endfor %}
+        </div>
+    </table>
 </div>
 
-<script>
-
-
-var properties = [
-	'name',
-	'image',
-	'kick',
-	'control',
-	'technique',
-    'intelligence',
-	'pressure',
-	'agility',
-    'physical',
-];
-
-$.each( properties, function( i, val ) {
-	
-	var orderClass = '';
-
-	$("#" + val).click(function(e){
-		e.preventDefault();
-		$('.filter__link.filter__link--active').not(this).removeClass('filter__link--active');
-  		$(this).toggleClass('filter__link--active');
-   		$('.filter__link').removeClass('asc desc');
-
-   		if(orderClass == 'desc' || orderClass == '') {
-    			$(this).addClass('asc');
-    			orderClass = 'asc';
-       	} else {
-       		$(this).addClass('desc');
-       		orderClass = 'desc';
-       	}
-
-		var parent = $(this).closest('.header__item');
-    		var index = $(".header__item").index(parent);
-		var $table = $('.table-content');
-		var rows = $table.find('.table-row').get();
-		var isSelected = $(this).hasClass('filter__link--active');
-		var isNumber = $(this).hasClass('filter__link--number');
-			
-		rows.sort(function(a, b){
-
-			var x = $(a).find('.table-data').eq(index).text();
-    			var y = $(b).find('.table-data').eq(index).text();
-				
-			if(isNumber == true) {
-    					
-				if(isSelected) {
-					return x - y;
-				} else {
-					return y - x;
-				}
-
-			} else {
-			
-				if(isSelected) {		
-					if(x < y) return -1;
-					if(x > y) return 1;
-					return 0;
-				} else {
-					if(x > y) return -1;
-					if(x < y) return 1;
-					return 0;
-				}
-			}
-    		});
-
-		$.each(rows, function(index,row) {
-			$table.append(row);
-		});
-
-		return false;
-	});
-
-});
-
-
-
-
-
-</script>
 {% endblock %}

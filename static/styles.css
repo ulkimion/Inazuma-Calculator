@@ -72,6 +72,8 @@ justify-content: center;
     flex-direction: column;
 }
 
+
+
 .table {
     border-spacing: 0;
     margin: 1rem;
@@ -175,18 +177,13 @@ h3 {
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
 
-$base-spacing-unit: 24px;
-$half-spacing-unit: $base-spacing-unit / 2;
-
-$color-alpha: #1772FF;
-$color-form-highlight: #EEEEEE;
 
 *, *:before, *:after {
 	box-sizing:border-box;
 }
 
 body {
-	padding:$base-spacing-unit;
+	padding:base-spacing-unit;
 	font-family:'Source Sans Pro', sans-serif;
 	margin:0;
 }
@@ -207,23 +204,23 @@ h1,h2,h3,h4,h5,h6 {
 
 .table {
 	width:100%;
-	border:1px solid $color-form-highlight;
+	border:1px solid color-form-highlight;
 }
 
 .table-header {
 	display:flex;
 	width:100%;
 	background:#000;
-	padding:($half-spacing-unit * 1.5) 0;
+	padding:(half-spacing-unit * 1.5) 0;
 }
 
 .table-row {
 	display:flex;
 	width:100%;
-	padding:($half-spacing-unit * 1.5) 0;
+	padding:(half-spacing-unit * 1.5) 0;
 	
 	&:nth-of-type(odd) {
-		background:$color-form-highlight;
+		background:color-form-highlight;
 	}
 }
 
@@ -243,15 +240,15 @@ h1,h2,h3,h4,h5,h6 {
 	text-decoration: none;
 	position:relative;
 	display:inline-block;
-	padding-left:$base-spacing-unit;
-	padding-right:$base-spacing-unit;
+	padding-left:base-spacing-unit;
+	padding-right:base-spacing-unit;
 	
 	&::after {
 		content:'';
 		position:absolute;
-		right:-($half-spacing-unit * 1.5);
+		right:-(half-spacing-unit * 1.5);
 		color:white;
-		font-size:$half-spacing-unit;
+		font-size:half-spacing-unit;
 		top: 50%;
 		transform: translateY(-50%);
 	}

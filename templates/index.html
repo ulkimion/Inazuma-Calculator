@@ -22,16 +22,33 @@
     <input type="number" placeholder="+AT" id="ExtraAT" min="0"/><br><br>
     Equipment<br>
 
-<!--   <select id="BootsKickerSelector" onchange="updateFW()">
-        {% for data in players.Boots %}
-            <option>{{ data.Boots }}</option>
+    <select id="BootsKicker" onchange="updateFW()">
+        {% for data in players.Boots%}
+            <option>{{ data.Items }}</option>
         {% endfor %}
-    </select> --> 
+    </select>
+    <br>
 
-    <input type="number" placeholder="Boots" id="BootsKicker" min="0"/><br>
-    <input type="number" placeholder="Bracelet" id="BraceletKicker" min="0"/><br>
-    <input type="number" placeholder="Pendant" id="PendantKicker" min="0"/><br>
-    <input type="number" placeholder="Special" id="SpecialKicker" min="0"/>
+    <select id="BraceletKicker" onchange="updateFW()">
+        {% for data in players.Bracelets%}
+            <option>{{ data.Items }}</option>
+        {% endfor %}
+    </select>
+    <br>
+
+    <select id="PendantKicker" onchange="updateFW()" class="select">
+        {% for data in players.Pendants%}
+            <option>{{ data.Items }}</option>
+        {% endfor %}
+    </select>
+    <br>
+
+    <select id="SpecialKicker" onchange="updateFW()">
+        {% for data in players.Specials%}
+            <option>{{ data.Items }}</option>
+        {% endfor %}
+    </select>
+    
 
 </div>
 
@@ -51,7 +68,7 @@
     <input type="number" placeholder="Bond" id="Bond" min="0" max="30"/><br>
     KP Increase<br> 
     <input type="number" placeholder="KP Increase" id="KPincrease" min="0"/><br>
-    LostKP<br> 
+    Lost KP<br> 
     <input type="number" placeholder="Lost KP" id="LostKP" min="0"/><br>
     Castle Wall 1<br> 
     <input type="number" placeholder="Castle Wall 1" id="CW1" min="0"/><br>
@@ -78,12 +95,35 @@
     <input type="number" placeholder="Catch Hissatsu" id="CatchHissatsu" min="0"/><br>
     +DF<br>
     <input type="number" placeholder="+DF" id="ExtraDF" min="0"/><br><br>
-    
     Equipment<br>
-    <input type="number" placeholder="Boots" id="BootsCatcher" min="0"/><br>
-    <input type="number" placeholder="Bracelet" id="BraceletCatcher" min="0"/><br>
-    <input type="number" placeholder="Pendant" id="PendantCatcher" min="0"/><br>
-    <input type="number" placeholder="Special" id="SpecialCatcher" min="0"/><br>
+
+    <select id="BootsCatcher" onchange="updateFW()">
+        {% for data in players.Boots%}
+            <option>{{ data.Items }}</option>
+        {% endfor %}
+    </select>
+    <br>
+
+    <select id="BraceletCatcher" onchange="updateFW()">
+        {% for data in players.Bracelets%}
+            <option>{{ data.Items }}</option>
+        {% endfor %}
+    </select>
+    <br>
+
+    <select id="PendantCatcher" onchange="updateFW()" class="select">
+        {% for data in players.Pendants%}
+            <option>{{ data.Items }}</option>
+        {% endfor %}
+    </select>
+    <br>
+
+    <select id="SpecialCatcher" onchange="updateFW()">
+        {% for data in players.Specials%}
+            <option>{{ data.Items }}</option>
+        {% endfor %}
+    </select>
+
 </div>
 </div>
     
