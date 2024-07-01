@@ -1,6 +1,6 @@
 {% extends "base_template.html" %}
 
-{% block title %}{{ slug_title }}{% endblock %}
+{% block title %}{{ player.Player }}{% endblock %}
 
 {% block body %}
 <body>
@@ -9,11 +9,64 @@
         <h2>{{ player.Player }}'s Stats</h2>
         <p>Kick: {{ player.Kick }}</p>
         <p>Control: {{ player.Control }}</p>
-        <p>Técnica: {{ player.Technique }}</p>
-        <p>Inteligencia: {{ player.Intelligence }}</p>
-        <p>Presión: {{ player.Pressure }}</p>
-        <p>Agilidad: {{ player.Agility }}</p>
-        <p>Físico: {{ player.Physical }}</p>
+        <p>Technique: {{ player.Technique }}</p>
+        <p>Intelligence: {{ player.Intelligence }}</p>
+        <p>Pressure: {{ player.Pressure }}</p>
+        <p>Agility: {{ player.Agility }}</p>
+        <p>Physical: {{ player.Physical }}</p>
     </div>
 
+    <canvas id="radarChart" style="max-width: 400px; max-height: 400px;"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const data = {
+                labels: [
+                    'Kick',
+                    'Control',
+                    'Technique',
+                    'Intelligence',
+                    'Pressure',
+                    'Agility',
+                    'Physical'
+                ],
+                datasets: [{
+                    label: 'Player Stats',
+                    data: [
+                        {{ player.Kick }},
+                        {{ player.Control }},
+                        {{ player.Technique }},
+                        {{ player.Intelligence }},
+                        {{ player.Pressure }},
+                        {{ player.Agility }},
+                        {{ player.Physical }}
+                    ],
+                    backgroundColor: 'rgba(99, 132, 255, 0.2)',
+                    borderColor: 'rgb(99, 132, 255)',
+                    pointBackgroundColor: 'rgb(99, 132, 255)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(99, 132, 255)'
+                }]
+            };
+
+            const config = {
+                type: 'radar',
+                data: data,
+                options: {
+                    elements: {
+                        line: {
+                            borderWidth: 3
+                        }
+                    }
+                }
+            };
+
+            // Obtener el contexto del canvas y dibujar el gráfico
+            var ctx = document.getElementById('radarChart').getContext('2d');
+            var radarChart = new Chart(ctx, config);
+        });
+    </script>
+</body>
 {% endblock %}
