@@ -4,129 +4,149 @@
 
 {% block body %}
 
-    <div class="Calculator">
+<div class="Calculator">
     <div class="Calculator_FW">
-    <img src="{{ url_for('static',filename='Shawn.webp' ) }}" class="responsive"id="FW">
-    <br>
-    <select id="Kicker" onchange="updateFW()">
-        {% for data in players.Players%}
-            <option>{{ data.Player }}</option>
-        {% endfor %}
-    </select>
-    <br>
-    <input type="number" placeholder="Kick" id="Kick" min="0" min="0"/><br>
-    <input type="number" placeholder="Control" id="Control" min="0"/><br>
-    Technique<br>
-    <input type="number" placeholder="Shoot Hissatsu" id="ShootHissatsu" min="0"/><br>
-    +AT<br>
-    <input type="number" placeholder="+AT" id="ExtraAT" min="0"/><br><br>
-    Equipment<br>
+        <b>Forwards</b><br>
+        <img src="{{ url_for('static',filename='None.webp' ) }}" class="responsive" id="FW">
+        <br>
+        <select id="Kicker" onchange="updateFW()">
+            <option> None </option>
+            {% for data in players.Players %}
+                <option>{{ data.Player }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <input type="number" placeholder="Kick" id="Kick" min="0"/><br>
+        <input type="number" placeholder="Control" id="Control" min="0"/><br>
+        Technique<br>
 
-    <select id="BootsKicker" onchange="updateFW()">
-        {% for data in players.Boots%}
-            <option>{{ data.Items }}</option>
-        {% endfor %}
-    </select>
-    <br>
 
-    <select id="BraceletKicker" onchange="updateFW()">
-        {% for data in players.Bracelets%}
-            <option>{{ data.Items }}</option>
-        {% endfor %}
-    </select>
-    <br>
+        
+        
+        <select id="ShootHissatsu" onchange="updateFW()" style ="width: 200px;">
+            {% for data in players.Shoots %}
+                <option>{{ data.Name }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        
+        +AT<br>
+        <input type="number" placeholder="+AT" id="ExtraAT" min="0" style ="width: 100px;"><br>
+        Equipment<br>
+        <select id="BootsKicker" onchange="updateFW()" style ="width: 250px;">
+            {% for data in players.Boots %}
+                <option>{{ data.Items }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <select id="BraceletKicker" onchange="updateFW()" style ="width: 250px;">
+            {% for data in players.Bracelets %}
+                <option>{{ data.Items }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <select id="PendantKicker" onchange="updateFW()" style ="width: 250px;">
+            {% for data in players.Pendants %}
+                <option>{{ data.Items }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <select id="SpecialKicker" onchange="updateFW()" style ="width: 250px;">
+            {% for data in players.Specials %}
+                <option>{{ data.Items }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="Calculator_Results_Wrapper">
+        <div class="Calculator_Results">
+            <div>
+                <p id="ShootResult"></p>
+                <p id="CatchResult"></p>
+                <p id="Remaining_KP"></p>
+            </div>
+        </div>
+        <br>
+        <div class="Calculator_Details">
+            Bond <br> 
+            <input type="number" placeholder="Bond" id="Bond" min="0" max="30" style ="width: 100px;"><br>
+            KP Increase<br> 
+            <input type="number" placeholder="KP Increase" id="KPincrease" min="0" style ="width: 100px;"><br>
+            Lost KP<br> 
+            <input type="number" placeholder="Lost KP" id="LostKP" min="0" style ="width: 100px;"><br>
+            Direct
+            <select id="Direct" onchange="updateFW()" style ="width: 100px;">
+                <option> None </option>
+                {% for data in players.Players %}
+                    <option>{{ data.Player }}</option>
+                {% endfor %}
+            </select>
+            Castle Wall 1<br> 
+            <select id="CW1" onchange="updateFW()" style ="width: 100px;">
+                <option> None </option>
+                {% for data in players.Players %}
+                    <option>{{ data.Player }}</option>
+                {% endfor %}
+            </select>
+            Castle Wall 2<br> 
+            <select id="CW2" onchange="updateFW()" style ="width: 100px;">
+                <option> None </option>
+                {% for data in players.Players %}
+                    <option>{{ data.Player }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <div class="Calculator_GK">
+        <b>Goalkeeper</b><br>
+        <img src="{{ url_for('static',filename='None.webp' ) }}" class="responsive" id="GK">
+        <br>
+        <select id="Catcher" onchange="updateGK()">
+            <option> None </option>
+            {% for data in players.Players %}
+                <option>{{ data.Player }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <input type="number" placeholder="Agility" id="Agility" min="0"/><br>
+        <input type="number" placeholder="Physical" id="Physical" min="0"/><br>
+        Technique<br>
 
-    <select id="PendantKicker" onchange="updateFW()" class="select">
-        {% for data in players.Pendants%}
-            <option>{{ data.Items }}</option>
-        {% endfor %}
-    </select>
-    <br>
+ 
+        <select id="CatchHissatsu" onchange="updateGK()" style ="width: 200px;">
+            {% for data in players.Catch %}
+                <option>{{ data.Name }}</option>
+            {% endfor %}
+        </select>
+        <br>
 
-    <select id="SpecialKicker" onchange="updateFW()">
-        {% for data in players.Specials%}
-            <option>{{ data.Items }}</option>
-        {% endfor %}
-    </select>
-    
-
+        +DF<br>
+        <input type="number" placeholder="+DF" id="ExtraDF" min="0" style ="width: 100px;"><br>
+        Equipment<br>
+        <select id="BootsCatcher" onchange="updateGK()" style ="width: 250px;">
+            {% for data in players.Boots %}
+                <option>{{ data.Items }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <select id="BraceletCatcher" onchange="updateGK()" style ="width: 250px;">
+            {% for data in players.Bracelets %}
+                <option>{{ data.Items }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <select id="PendantCatcher" onchange="updateGK()" style ="width: 250px;">
+            {% for data in players.Pendants %}
+                <option>{{ data.Items }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <select id="SpecialCatcher" onchange="updateGK()" style ="width: 250px;">
+            {% for data in players.Specials %}
+                <option>{{ data.Items }}</option>
+            {% endfor %}
+        </select>
+    </div>
 </div>
-
-<div class="Calculator_Results_Wrapper">
-<div class="Calculator_Results">
- <b>
-    <p id="ShootResult"></p>
-    <p id="CatchResult"></p>
-    <p id="Remaining_KP"></p>
-</b>
-</div>
-<br>
-<div class="Calculator_Details">    
-    Direct <br> 
-    <input type="number" placeholder="Direct" id="Direct" min="0"/><br>    
-    Bond <br> 
-    <input type="number" placeholder="Bond" id="Bond" min="0" max="30"/><br>
-    KP Increase<br> 
-    <input type="number" placeholder="KP Increase" id="KPincrease" min="0"/><br>
-    Lost KP<br> 
-    <input type="number" placeholder="Lost KP" id="LostKP" min="0"/><br>
-    Castle Wall 1<br> 
-    <input type="number" placeholder="Castle Wall 1" id="CW1" min="0"/><br>
-    Castle Wall 2<br> 
-    <input type="number" placeholder="Castle Wall 2" id="CW2" min="0"/><br>
-</div>
-</div>
-
-
-<div class="Calculator_GK">
-    <img src="{{ url_for('static',filename='Mark.webp' ) }}" class="responsive"id="GK">
-    <br>
-    <select id="Catcher" onchange="updateGK()">
-        {% for data in players.Players%}
-            <option>{{ data.Player }}</option>
-        {% endfor %}
-    </select>
-    <br>
-
-
-    <input type="number" placeholder="Agility" id="Agility" min="0"/><br>
-    <input type="number" placeholder="Physical" id="Physical" min="0"/><br>
-    Technique<br>
-    <input type="number" placeholder="Catch Hissatsu" id="CatchHissatsu" min="0"/><br>
-    +DF<br>
-    <input type="number" placeholder="+DF" id="ExtraDF" min="0"/><br><br>
-    Equipment<br>
-
-    <select id="BootsCatcher" onchange="updateFW()">
-        {% for data in players.Boots%}
-            <option>{{ data.Items }}</option>
-        {% endfor %}
-    </select>
-    <br>
-
-    <select id="BraceletCatcher" onchange="updateFW()">
-        {% for data in players.Bracelets%}
-            <option>{{ data.Items }}</option>
-        {% endfor %}
-    </select>
-    <br>
-
-    <select id="PendantCatcher" onchange="updateFW()" class="select">
-        {% for data in players.Pendants%}
-            <option>{{ data.Items }}</option>
-        {% endfor %}
-    </select>
-    <br>
-
-    <select id="SpecialCatcher" onchange="updateFW()">
-        {% for data in players.Specials%}
-            <option>{{ data.Items }}</option>
-        {% endfor %}
-    </select>
-
-</div>
-</div>
-    
     
     <script> 
  function calcular() {
@@ -160,6 +180,11 @@
         var GK_Remaining_KP = FinalCatchPower - FinalShootPower;
 
 
+            // Redondear los resultados a enteros
+        FinalShootPower = Math.round(FinalShootPower);
+        FinalCatchPower = Math.round(FinalCatchPower);
+        GK_Remaining_KP = Math.round(GK_Remaining_KP);
+
         document.getElementById("ShootResult").innerHTML = "Shoot result: " + FinalShootPower;
         document.getElementById("CatchResult").innerHTML = "Catch Result: " + FinalCatchPower;
         document.getElementById("Remaining_KP").innerHTML = "Remaining KP: " + GK_Remaining_KP;
@@ -176,11 +201,7 @@
 
         document.getElementById("CatchResult").innerHTML =
         "Catch Result: " + FinalShootPower;
-        //formula tiro base = (Kick + Control + equipamiento)
-        //formula atrape base = (Agility + physical + equipamiento)
-        //formula tiro final = (( Tiro base + Shoot Hissatsu + Direct ) x (1 + Extra AT)) x Bond)
-        //formula atrape final = atrape base + (Catch Hissatsu x Extra DF) + Castle wall 1 y 2 + (atrape base x (1 + KP Increase))  - LostKP 
-
+        
         function updateFW() {
         var selectedPlayer = document.getElementById("Kicker").value;
         var imageElement = document.getElementById("FW");
@@ -192,12 +213,6 @@
         var imageElement = document.getElementById("GK");
         imageElement.src = "{{ url_for('static', filename='') }}" + selectedPlayer + ".webp";
         }
-
-        function updateBootsKicker(){
-            ;
-        }
-
-        
 
     </script>
 {% endblock %}

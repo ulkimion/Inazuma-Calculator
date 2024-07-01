@@ -8,7 +8,7 @@
         <div class="table-header">
             <tr>
                 <td>
-                    <div class="header__item">Name</div>
+                    </a><div class="header__item">Name</div>
                 </td>
                 <td>
                     <div class="header__item">Image</div>
@@ -42,10 +42,10 @@
             <div class="table-row">
                 <tr>
                     <td>
-                        <div class="table-data">{{ data.Player }}</div>
+                        <a href="/player/{{ data.Player }}"><div class="table-data">{{ data.Player }}</div></a>
                     </td>
                     <td>
-                        <img src="{{ url_for('static', filename='{}'.format(data.Image) ) }}">
+                        <a href="/player/{{ data.Player }}"><img src="{{ url_for('static', filename='{}'.format(data.Image) ) }}"></a>
                     </td>
                     <td>
                         <div class="table-data">{{ data.Kick }}</div>
