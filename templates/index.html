@@ -184,6 +184,7 @@
         FinalShootPower = Math.round(FinalShootPower);
         FinalCatchPower = Math.round(FinalCatchPower);
         GK_Remaining_KP = Math.round(GK_Remaining_KP);
+        GK_Remaining_KP = Math.max(GK_Remaining_KP, 0);
 
         document.getElementById("ShootResult").innerHTML = "Shoot result: " + FinalShootPower;
         document.getElementById("CatchResult").innerHTML = "Catch Result: " + FinalCatchPower;
@@ -214,5 +215,10 @@
         imageElement.src = "{{ url_for('static', filename='') }}" + selectedPlayer + ".webp";
         }
 
+
+        
+
+    </script>
+        
     </script>
 {% endblock %}

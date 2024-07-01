@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify, url_for
 import json
 app = Flask(__name__)
 
@@ -17,8 +17,25 @@ def show_post(slug):
 @app.route("/player/<string:slug>/")
 def player_data(slug):
     with open("database/VRoadDB.json", encoding="utf-8") as file:
-        data=json.load(file)
-    return render_template("player_data.html", player=data, slug_title=slug, content=slug)
+        data = json.load(file)
+        
+    # Obtener la lista de jugadores
+    players = data.get("Players", [])
+    
+    # Buscar datos del jugador específico
+    player_info = None
+    for player in players:
+        if player["Player"].lower() == slug.lower():
+            player_info = player
+            break
+
+    player_info["image_url"] = url_for('static', filename='{}.webp'.format(slug.lower()))  
+    
+    if player_info:
+        return render_template("player_data.html", player=player_info)
+    else:
+        return jsonify({"error": "Jugador no encontrado"}), 404
+
 
 @app.route("/")
 def index():

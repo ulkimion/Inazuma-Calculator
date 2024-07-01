@@ -3,52 +3,17 @@
 {% block title %}{{ slug_title }}{% endblock %}
 
 {% block body %}
-
-{{content}}
-
-<table class="table">
-    {% for data in player.Players %}
-    <tr>
-        <td>
-            {{ data.Player }}
-            
-        </td>
-        <td>
-            <img src="{{ url_for('static',filename='{}'.format(data.Image) ) }}">
-            
-        </td>
-        <td>
-            {{ data.Kick }}
-        </td>
-        <td>
-            {{ data.Control }}
-        </td>
-        <td>
-            {{ data.Technique }}
-        </td>
-        <td>
-            {{ data.Intelligence }}
-        </td>
-        <td>
-            {{ data.Pressure }}
-        </td>
-        <td>
-            {{ data.Agility }}
-        </td>
-        <td>
-            {{ data.Physical }}
-        </td>
-    </tr>
-    {% endfor %}
-</table>
+<body>
+    <img src="{{ player['image_url'] }}" alt="{{ player['Player'] }}">
+    <div id="player-stats">
+        <h2>{{ player.Player }}'s Stats</h2>
+        <p>Kick: {{ player.Kick }}</p>
+        <p>Control: {{ player.Control }}</p>
+        <p>Técnica: {{ player.Technique }}</p>
+        <p>Inteligencia: {{ player.Intelligence }}</p>
+        <p>Presión: {{ player.Pressure }}</p>
+        <p>Agilidad: {{ player.Agility }}</p>
+        <p>Físico: {{ player.Physical }}</p>
+    </div>
 
 {% endblock %}
-
-<script>
-    function updatePlayer_Photo() {
-        var selectedPlayer = content;
-        var imageElement = document.getElementById("player");
-        imageElement.src = "{{ url_for('static', filename='') }}" + selectedPlayer + ".webp";
-        }
-
-    updatePlayer+Photo();
