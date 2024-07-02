@@ -43,8 +43,20 @@ def index():
         data=json.load(file)
     return render_template("index.html", players=data)
 
-@app.route('/get_data')
-def get_data():
+@app.route("/WIP-Calculator/")
+def wip_calculator():
+    with open("database/VRoadDB.json", encoding="utf-8") as file:
+        data=json.load(file)
+    return render_template("dynamic_calculator_NotFullyFunctional.html", players=data)
+
+@app.route('/about_us/')
+def about_us():
+    with open("database/VRoadDB.json", encoding="utf-8") as file:
+        data=json.load(file)
+    return render_template("about_us.html", players=data)
+
+@app.route('/get_boots_data')
+def get_boots_data():
     with open('database/VRoadDB.json') as f:
         data = json.load(f)
     return jsonify(data)
