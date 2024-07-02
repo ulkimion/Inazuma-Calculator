@@ -42,3 +42,9 @@ def index():
     with open("database/VRoadDB.json", encoding="utf-8") as file:
         data=json.load(file)
     return render_template("index.html", players=data)
+
+@app.route('/get_data')
+def get_data():
+    with open('database/VRoadDB.json') as f:
+        data = json.load(f)
+    return jsonify(data)

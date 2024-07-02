@@ -16,8 +16,8 @@
             {% endfor %}
         </select>
         <br>
-        <input type="number" placeholder="Kick" id="Kick" min="0"/><br>
-        <input type="number" placeholder="Control" id="Control" min="0"/><br>
+        <p id="Kick"></p>
+        <p id="Control"></p>
         Technique<br>
 
 
@@ -60,6 +60,12 @@
     <div class="Calculator_Results_Wrapper">
         <div class="Calculator_Results">
             <div>
+
+                <input type="text" id="Kicker" placeholder="Enter player name">
+                <button onclick="fetchData()">Search</button>
+                <p id="result"></p>
+
+
                 <p id="ShootResult"></p>
                 <p id="CatchResult"></p>
                 <p id="Remaining_KP"></p>
@@ -203,20 +209,66 @@
         document.getElementById("CatchResult").innerHTML =
         "Catch Result: " + FinalShootPower;
         
+
         function updateFW() {
         var selectedPlayer = document.getElementById("Kicker").value;
         var imageElement = document.getElementById("FW");
         imageElement.src = "{{ url_for('static', filename='') }}" + selectedPlayer + ".webp";
+        
+            console.log("Fetching data...");
+            fetch('/get_data')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Data received:", data);
+                    if (data.Players) {
+                        const input = document.getElementById('Kicker').value;
+                        console.log("Input value:", input);
+                        const result = searchInDatabase(data.Players, input);
+                        console.log("Search result:", result);
+                        if (result) {
+                            document.getElementById('Kick').innerHTML = 
+                                '<b>Kick: ' + result.Kick + '<br></b>';
+                            document.getElementById('Control').innerHTML = 
+                                '<b>Control: ' + result.Control + '<br></b>';
+                        } else {
+                            document.getElementById('Kick').innerHTML = 
+                                '<b>Kick: ' + 0 + '<br></b>';
+                            document.getElementById('Control').innerHTML = 
+                                '<b>Control: ' + 0 + '<br></b>'
+                        }
+                    } else {
+                        console.error("No 'Players' key in received data:", data);
+                        document.getElementById('result').innerText = 'No player data found';
+                    }
+                })
+                .catch(error => console.error('Error fetching data:', error));
         }
 
+        function searchInDatabase(data, searchTerm) {
+            console.log("Searching for:", searchTerm);
+            console.log("Data to search in:", data);
+            const player = data.find(player => player.Player.toLowerCase() === searchTerm.toLowerCase());
+            console.log("Search result:", player);
+            return player;
+
+        calcular();
+        }
+
+        updateFW();
+
+        
         function updateGK() {
         var selectedPlayer = document.getElementById("Catcher").value;
         var imageElement = document.getElementById("GK");
         imageElement.src = "{{ url_for('static', filename='') }}" + selectedPlayer + ".webp";
         }
 
-
-        
+        updateGK();
 
     </script>
         
